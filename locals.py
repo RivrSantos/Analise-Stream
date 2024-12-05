@@ -3,7 +3,7 @@ import streamlit as st
 
 
 regi= pd.read_csv('realatorio_moto.csv')
-anos= pd.read_excel('Registro_ano.xlsx')
+anos= pd.read_csv('table_ano.csv')
 servico= pd.read_csv('table_clientes.csv')
 motos_rev= pd.read_csv('table_moto.csv')
 
