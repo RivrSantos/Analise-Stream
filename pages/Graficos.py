@@ -17,8 +17,7 @@ def grafics():
     st.subheader('REGISTRO DE REVISOES')
     st.markdown(
         ' O gráfico abaixo representa a evolução do programa de Revisão Preço Fixo')
-    st.bar_chart(preco_f, x='MES', y='QTD REVISOES')
-
+    st.line_chart(preco_f)
 
 grafics()
 
