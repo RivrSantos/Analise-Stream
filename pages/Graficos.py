@@ -12,12 +12,14 @@ def grafics():
     st.header("Gráficos", divider=True)
     st.subheader('REGISTRO DE PASSAGEM POR ANO/MODELO')
     st.markdown(' O gráfico apresenta analise impactante em relação a retenção dos clientes que seguem o plano de manutenção  PREÇO FIXO oferecido pela YAMAHA Motor do Brasil. E importante ressaltar que houve aumento de 2,5% em relação ao mês anterior')
-    st.bar_chart(anos, x= 'ano')
+    container1 = st.container(border=True, height=400)
+    container1.bar_chart(anos, x= 'ano')
     st.info('💡 . Para mais informações acesse www.yamaha-motor.com')
     st.subheader('REGISTRO DE REVISOES')
     st.markdown(
         ' O gráfico abaixo representa a evolução do programa de Revisão Preço Fixo')
-    st.line_chart(preco_f, x='MES')
+    container2 = st.container(border=True, height=400)
+    container2.line_chart(preco_f, x='MES')
 
 grafics()
 
